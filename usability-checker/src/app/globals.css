@@ -114,6 +114,12 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

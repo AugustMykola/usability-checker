@@ -4,7 +4,7 @@ import UrlInput from "@/components/url-input/url-input";
 
 export default function Header() {
     return (
-        <header className={`${styles.header} text-white`}>
+        <div className={`${styles.header} text-white`}>
             <div className={`${styles.container} flex justify-between items-center`}>
                 <div className={`${styles.logo} flex justify-between items-center`}>
                     <div className={styles.logoImageContainer}>
@@ -51,6 +51,6 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
     );
 }
