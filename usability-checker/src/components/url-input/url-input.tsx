@@ -27,8 +27,10 @@ export default function UrlInput({ onSubmit }: { onSubmit?: (url: string) => Pro
         setTimeout(() => {
             if (validateUrl(newUrl)) {
                 setStatus('success');
+                setIsButtonDisabled(false)
             } else {
                 setStatus('error');
+                setIsButtonDisabled(true)
             }
         }, 2000);
     };
@@ -47,29 +49,38 @@ export default function UrlInput({ onSubmit }: { onSubmit?: (url: string) => Pro
                     className="bg-transparent flex-1 border-none outline-none shadow-none focus-visible:ring-0"
                     value={url}
                     onFocus={() => setIsButtonDisabled(true)}
-                    onBlur={() => setIsButtonDisabled(false)}
+                    onBlur={() => {
+                        if(status === 'success') {
+                            setIsButtonDisabled(false);
+                        }
+                        if (!url.trim()) {
+                            setStatus('default');
+                        }
+                    }}
                     onChange={handleChange}
                 />
-                <div className="flex items-center gap-2">
-                    {status === 'loading' && (
-                        <div className="flex items-center gap-2 text-gray-500">
-                            <Loader className="animate-spin" size={18} />
-                        </div>
-                    )}
-                    {status === 'success' && (
-                        <div className="flex items-center gap-2 text-green-500">
-                            <CheckCircle size={18} />
-                        </div>
-                    )}
-                    {status === 'error' && (
-                        <div className="flex items-center gap-2 text-red-500">
-                            <AlertTriangle size={18} /> Wrong link
-                        </div>
-                    )}
-                    <Button variant="secondary" disabled={isButtonDisabled}>
-                        Submit
-                    </Button>
-                </div>
+                {status !== 'default' && (
+                    <div className="flex items-center gap-2">
+                        {status === 'loading' && (
+                            <div className="flex items-center gap-2 text-gray-500">
+                                <Loader className="animate-spin" size={18} />
+                            </div>
+                        )}
+                        {status === 'success' && (
+                            <div className="flex items-center gap-2 text-green-500">
+                                <CheckCircle size={18} />
+                            </div>
+                        )}
+                        {status === 'error' && (
+                            <div className="flex items-center gap-2 text-red-500">
+                                <AlertTriangle size={18} /> Wrong link
+                            </div>
+                        )}
+                        <Button variant="secondary" disabled={isButtonDisabled}>
+                            Submit
+                        </Button>
+                    </div>
+                )}
             </div>
 
         </div>
