@@ -1,0 +1,21 @@
+.urlInputContainer {
+    width: 669px;
+    height: 44px;
+    top: 62px;
+    left: 32px;
+    border-radius: 12px;
+    padding: 12px;
+    gap: 8px;
+    background-color: #5C5E631A;
+}
+
+.urlInputContainer:hover {
+    border: 1px solid #636363;
+}
+
+.urlInputContainer:focus-visible {
+}
+
+.urlInputContainer:focus-within {
+    border: 1px solid white;
+}
