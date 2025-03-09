@@ -64,7 +64,6 @@ const PagePerformance = () => (
     </svg>
 )
 
-
 const Accessibility = () => (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="5.66602" cy="7" r="1" stroke="#75777C" strokeWidth="1.2"/>
@@ -238,17 +237,11 @@ const data = {
 export function AppSidebar({...props}: React.ComponentProps<typeof Sidebar>) {
     return (
         <Sidebar collapsible="icon" {...props} style={{borderRight: "none"}}>
-            <SidebarHeader>
+            <SidebarHeader className="py-[16px] px-[4px]">
                 <TeamSwitcher teams={data.teams} />
             </SidebarHeader>
-            <SidebarContent className="p-[24px]">
+            <SidebarContent className="pt-0 px-[16px] pb-[8px]">
                 <NavMain items={data.navMain} />
-                <div className="flex gap-2">
-                    <Button className="w-[24px] h-[24px] text-[#0052FF]" style={{ backgroundColor: "#75777C26" }}>
-                        <Plus fill="#0052FF"  className="w-6 h-6" />
-                    </Button>
-                    Add Page
-                </div>
                 <UXCard></UXCard>
             </SidebarContent>
         </Sidebar>
