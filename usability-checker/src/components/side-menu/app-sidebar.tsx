@@ -238,7 +238,7 @@ export function AppSidebar({...props}: React.ComponentProps<typeof Sidebar>) {
             <SidebarHeader className="py-[16px] px-[4px]">
                 <TeamSwitcher teams={data.teams} />
             </SidebarHeader>
-            <SidebarContent className="pt-0 px-[16px] pb-[8px]">
+            <SidebarContent className="relative pt-0 px-[16px] pb-[8px]">
                 <NavMain items={data.navMain} />
                 <UXCard></UXCard>
             </SidebarContent>
