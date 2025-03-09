@@ -1,0 +1,130 @@
+.container {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1272px;
+    height: 108px;
+    padding: 24px;
+    margin: 0 auto;
+    background: #F7F7F7;
+    border: 1px solid #F7F7F7;
+}
+
+.leftSection {
+    width: 626px;
+    height: 60px;
+    gap: 12px;
+}
+
+.leftSectionReportDateText {
+    height: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #5C5E63;
+}
+
+.leftSectionReportImageContainer {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px 0 #5C5E631A;
+}
+
+.link {
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 471px;
+    height: 28px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #15191C;
+}
+
+.compareButton {
+    border-radius: 8px;
+    padding: 9px 10px 10px 8px;
+    width: 88px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    background: #15191C12;
+    color: #15191C;
+}
+
+.rightSection {
+    max-width: 337px;
+    height: 40px;
+}
+
+.shareReport {
+    width: 140px;
+    height: 40px;
+    border-radius: 12px;
+    background: #15191C0D;
+    color: #15191C;
+}
+
+.viewSwitchContainer {
+    width: 189px;
+    height: 40px;
+    padding: 2px;
+    gap: 2px;
+    border-radius: 12px;
+    background: #EBEBEB;
+}
+
+.desktopViewButton {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.mobileViewButton {
+    width: 86px;
+    height: 36px;
+    gap: 8px;
+    border-radius: 12px;
+    padding: 8px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #15191C80;
+    background: #EBEBEB;
+}
+
+/*.button {*/
+/*    padding: 8px 12px;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*.share {*/
+/*    background-color: #007bff;*/
+/*    color: white;*/
+/*}*/
+
+/*.desktop {*/
+/*    background-color: #f0f0f0;*/
+/*}*/
+
+/*.mobile {*/
+/*    background-color: #ddd;*/
+/*    cursor: not-allowed;*/
+/*}*/
