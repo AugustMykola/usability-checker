@@ -18,6 +18,7 @@ import {
     SidebarHeader,
     SidebarRail,
 } from "@/components/ui/sidebar"
+import UXCard from "@/components/side-menu/ux-card";
 
 // This is sample data.
 const data = {
@@ -123,8 +124,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <SidebarHeader>
                 <TeamSwitcher teams={data.teams} />
             </SidebarHeader>
-            <SidebarContent>
+            <SidebarContent className="p-[24px]">
                 <NavMain items={data.navMain} />
+                <UXCard></UXCard>
             </SidebarContent>
         </Sidebar>
     )

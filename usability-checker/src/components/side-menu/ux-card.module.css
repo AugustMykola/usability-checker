@@ -1,0 +1,11 @@
+.uxCardContainer {
+    width: 100%;
+    max-width: 192px;
+    height: 186px;
+    border-radius: 8px 16px 16px 16px;
+    padding: 16px;
+    gap: 12px;
+    background: #FFFFFF;
+    border: 0.8px solid #E3E5E8;
+    box-shadow: 0 4px 8px 0 #5C5E631A;
+}
