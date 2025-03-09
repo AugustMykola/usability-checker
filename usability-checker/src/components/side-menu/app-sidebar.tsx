@@ -16,7 +16,6 @@ import {
     SidebarHeader
 } from "@/components/ui/sidebar"
 import UXCard from "@/components/side-menu/ux-card";
-import {Button} from "@/components/ui/button";
 
 const Overview = () => (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +26,6 @@ const Overview = () => (
             d="M1.66699 8.00033C1.66699 5.01476 1.66699 3.52198 2.59449 2.59449C3.52198 1.66699 5.01476 1.66699 8.00033 1.66699C10.9859 1.66699 12.4787 1.66699 13.4062 2.59449C14.3337 3.52198 14.3337 5.01476 14.3337 8.00033C14.3337 10.9859 14.3337 12.4787 13.4062 13.4062C12.4787 14.3337 10.9859 14.3337 8.00033 14.3337C5.01476 14.3337 3.52198 14.3337 2.59449 13.4062C1.66699 12.4787 1.66699 10.9859 1.66699 8.00033Z"
             stroke="#75777C" strokeWidth="1.2" strokeLinejoin="round"/>
     </svg>
-
 )
 
 const UsabilityDiagnouse = () => (
