@@ -1,0 +1,7 @@
+.reportContentContainer {
+    width: 100%;
+    max-width: 1272px;
+    background: #F7F7F7;
+    padding: 0 24px;
+    gap: 68px;
+}

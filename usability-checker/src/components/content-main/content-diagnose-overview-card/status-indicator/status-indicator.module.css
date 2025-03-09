@@ -1,0 +1,11 @@
+.statusDisplay {
+    position: absolute;
+    width: 84px;
+    height: 32px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    padding: 4px 14px 4px 10px;
+    background: #09C564;
+    left: 105px;
+}
