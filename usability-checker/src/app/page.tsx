@@ -11,7 +11,7 @@ export default function Home() {
                       <Header></Header>
                   </div>
               </header>
-              <main className="flex flex-1 flex-col">
+              <main style={{ backgroundColor: "#F7F7F7" }} className="flex flex-1 flex-col">
                   <div className={pageStyle.containerWrapper}>
                       <FirstExperiencePage></FirstExperiencePage>
                   </div>
