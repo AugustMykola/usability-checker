@@ -21,7 +21,9 @@ const ContentOverviewCard: React.FC<IContentOverviewCard> = ({title, score, stat
                     <p className={overviewCardStyles.subtitle}>Your page usability diagnose is normal</p>
                 </div>
                 <Button className={overviewCardStyles.button}>
-                    <ArrowUpRight size={12} color="#0052FF"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.00526 6L18 6.00024V15M6 18L17.7111 6.28912" stroke="#0052FF" stroke-width="1.5"/>
+                    </svg>
                 </Button>
             </div>
             <div>

@@ -5,7 +5,7 @@ import {
     AudioWaveform,
     Command,
     GalleryVerticalEnd,
-    File
+    File, Plus
 } from "lucide-react"
 
 import {NavMain} from "./nav-main"
@@ -16,6 +16,7 @@ import {
     SidebarHeader
 } from "@/components/ui/sidebar"
 import UXCard from "@/components/side-menu/ux-card";
+import {Button} from "@/components/ui/button";
 
 const Overview = () => (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +49,7 @@ const ContentHierarchy = () => (
         <path d="M14 14H6.66667C4.46678 14 3.36683 14 2.68342 13.3166C2 12.6332 2 11.5332 2 9.33333V2" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round"/>
         <path d="M4.66634 2.66699H5.33301" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round"/>
         <path d="M4.66634 4.66699H7.33301" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round"/>
-        <path d="M3.33301 13.3337C4.04696 12.0357 5.01487 8.67957 6.87053 8.67957C8.15308 8.67957 8.48523 10.3148 9.74209 10.3148C11.9045 10.3148 11.591 6.66699 13.9997 6.66699" stroke="#75777C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.33301 13.3337C4.04696 12.0357 5.01487 8.67957 6.87053 8.67957C8.15308 8.67957 8.48523 10.3148 9.74209 10.3148C11.9045 10.3148 11.591 6.66699 13.9997 6.66699" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 
 )
@@ -59,7 +60,7 @@ const PagePerformance = () => (
         <path d="M8.66699 6.66699L8.66699 14.0003" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M12 8.66699L12 14.0003" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M5.33301 8.66699L5.33301 13.3337" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M14 5.32429C12.7733 5.32429 11.4615 5.49469 10.5847 4.32865C9.58652 3.00113 7.74681 3.00113 6.74863 4.32865C5.87188 5.49469 4.56002 5.32429 3.33333 5.32429H2" stroke="#75777C" strokeWidth="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 5.32429C12.7733 5.32429 11.4615 5.49469 10.5847 4.32865C9.58652 3.00113 7.74681 3.00113 6.74863 4.32865C5.87188 5.49469 4.56002 5.32429 3.33333 5.32429H2" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 )
 
@@ -104,7 +105,6 @@ const PsychologicalFactors = () => (
     </svg>
 
 )
-
 const FunnelDiagnosis = () => (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="8" cy="3.33301" r="2" stroke="#75777C" strokeWidth="1.2"/>
@@ -114,8 +114,6 @@ const FunnelDiagnosis = () => (
         <path d="M13.3327 9.99935C13.3327 9.26297 12.5865 8.66602 11.666 8.66602H4.33268C3.41221 8.66602 2.66602 9.26297 2.66602 9.99935" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round"/>
         <path d="M8 7.33301L8 9.99967" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round"/>
     </svg>
-
-
 )
 const MetricsDiagnosis = () => (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +123,7 @@ const MetricsDiagnosis = () => (
 )
 const ContentAnalysis = () => (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M5.33301 13.3333C4.99031 13.7983 4.85128 13.9601 4.56949 13.9952C4.28771 14.0304 4.09289 13.8691 3.70326 13.5465C2.25374 12.3462 1.33301 10.5502 1.33301 8.54317C1.33301 4.92947 4.31778 2 7.99967 2C11.6816 2 14.6663 4.92947 14.6663 8.54317C14.6663 10.5502 13.7456 12.3462 12.2961 13.5465C11.9065 13.8691 11.7116 14.0304 11.4299 13.9952C11.1481 13.9601 11.009 13.7983 10.6663 13.3333" stroke="#75777C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.33301 13.3333C4.99031 13.7983 4.85128 13.9601 4.56949 13.9952C4.28771 14.0304 4.09289 13.8691 3.70326 13.5465C2.25374 12.3462 1.33301 10.5502 1.33301 8.54317C1.33301 4.92947 4.31778 2 7.99967 2C11.6816 2 14.6663 4.92947 14.6663 8.54317C14.6663 10.5502 13.7456 12.3462 12.2961 13.5465C11.9065 13.8691 11.7116 14.0304 11.4299 13.9952C11.1481 13.9601 11.009 13.7983 10.6663 13.3333" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M9 6.99967L12 3.33301" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
         <circle cx="8" cy="8" r="1" stroke="#75777C" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
@@ -245,6 +243,12 @@ export function AppSidebar({...props}: React.ComponentProps<typeof Sidebar>) {
             </SidebarHeader>
             <SidebarContent className="p-[24px]">
                 <NavMain items={data.navMain} />
+                <div className="flex gap-2">
+                    <Button className="w-[24px] h-[24px] text-[#0052FF]" style={{ backgroundColor: "#75777C26" }}>
+                        <Plus fill="#0052FF"  className="w-6 h-6" />
+                    </Button>
+                    Add Page
+                </div>
                 <UXCard></UXCard>
             </SidebarContent>
         </Sidebar>
