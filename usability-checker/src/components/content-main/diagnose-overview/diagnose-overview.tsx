@@ -2,7 +2,7 @@ import Card from "@/components/content-main/content-text-card/content-text-card"
 import diagnoseOverviewStyle from './diagnose-overview.module.css'
 import ContentOverviewCard from "@/components/content-main/content-diagnose-overview-card/content-overview-card";
 import TextCard from "@/components/content-main/content-text-card/content-text-card";
-import {ComponentBarChart} from "@/components/content-main/content-bar-chart/bar-cahrt";
+import BarChart from "@/components/content-main/content-bar-chart/bar-chart";
 
 const data = [
     {title: "Usability Diagnose", score: 80, status: "Good", criticalIssues: 2},
@@ -39,7 +39,7 @@ export default function DiagnoseOverview() {
                         description="Analysis for the most critical issues"
                     />
                     <div className={diagnoseOverviewStyle.chartContainer}>
-                        <ComponentBarChart></ComponentBarChart>
+                        <BarChart></BarChart>
                     </div>
                     <TextCard
                         title="Trending up by 5.2% this mont"
