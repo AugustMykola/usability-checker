@@ -122,10 +122,15 @@
 }
 
 body {
+  background-color: #F7F7F7;
   font-family: 'Helvetica Now Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: always;
+}
+
+.bg-sidebar {
+  background-color: #F7F7F7;
 }
 
 @layer base {

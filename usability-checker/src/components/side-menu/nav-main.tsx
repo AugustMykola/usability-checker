@@ -22,12 +22,12 @@ export function NavMain({items}: {
     items: {
         title: string
         url?: string
-        icon?: LucideIcon
+        icon?: any
         isActive?: boolean
         items?: {
             title: string
             url?: string
-            icon?: LucideIcon
+            icon?: any
         }[]
     }[]
 }) {
